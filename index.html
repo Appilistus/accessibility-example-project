@@ -75,6 +75,15 @@
 
       <section id="feedback" hidden>
         <h2>Share your experience</h2>
+
+        <!-- progress bar -->
+        <div class="quiz-progress" role="status" aria-live="polite">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+          </div>
+          <p class="pregress-text">0 of questions answered</p>
+        </div>
+
         <form id="feedback-form">
           <fieldset>
             <legend>Website navigation experience</legend>
@@ -129,6 +138,14 @@
         <h2>Thank you</h2>
         <div id="results-content"></div>
       </section>
+
+      <div
+        id="announcer" 
+        class="visually-hidden" 
+        role="status" 
+        aria-live="assertive">
+      </div>
+
     </main>
 
     <script src="js/main.js"></script>
